@@ -120,12 +120,3 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
-// This:
-
-// function red_starter_scripts() {
-//     wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-// }
-// Is better than this:
-function scripts() {
-    wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-}
