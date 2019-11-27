@@ -5,10 +5,10 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: white;
 
 	&:visited {
-		color: $color__link-visited;
+		color: white;
 	}
 	&:hover,
 	&:focus,
@@ -26,11 +26,26 @@ a {
 
 /* Menus */
 
+.menu-main-menu-container{
+	margin-left:55%;
+}
+
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: flex;
+	flex-direction: row-reverse;
 	width: 100%;
+	position: fixed;
+	li{
+		margin:5px;
+	}
+
+.site-header{
+	display: flex;
+    width: 100%;
+	justify-content: space-between;
+	margin: 20px;
+}	
 
 	ul {
 		display: none;
@@ -41,7 +56,6 @@ a {
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
-			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
@@ -62,27 +76,27 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
+			 :hover > a,
+			 .focus > a {
+			 }
 
 			a:hover,
-			a.focus {
-			}
-		}
+			 a.focus {
+		 	}
+		 }
 
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
 		}
-	}
+	 }
 	li {
 		float: left;
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
+		 &:hover > a,
+		 &.focus > a {
+		 }
 	}
 	a {
 		display: block;
@@ -92,13 +106,13 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-	}
+	 }
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,8 +124,8 @@ a {
 	}
 }
 
-.comment-navigation,
-.posts-navigation,
+// .comment-navigation,
+// .posts-navigation,
 .post-navigation {
 
 	.site-main & {
@@ -129,4 +143,11 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+	}
+.search-input{
+	display:none;
+
+}
+.search-input.show{
+	display:inline-block;
 }

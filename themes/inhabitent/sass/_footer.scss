@@ -1,0 +1,27 @@
+.site-info{
+width:100%;
+display:flex;
+justify-content: space-between;
+color:white;
+ul{
+    padding-inline-start: 0px;
+    margin:0px;
+}
+}
+.site-footer {
+    background: url('../../images/dark-wood.png');
+    /*add your desire image src path here.*/
+   background-size: cover;
+   width: 100%;
+   height: auto;
+   padding: 1rem;
+}
+
+
+.site-footer .sidebar-container {
+   background:none !important;
+}
+.widget-title{
+    color:orange;
+    
+}

@@ -5,7 +5,21 @@
  * navigation support for dropdown menus.
  */
 (function() {
-  let container, button, menu, links, i, len;
+  let container, button, menu, links, i, len, searchbtn, searchInput;
+
+  //my code 
+
+  searchbtn = document.getElementById('search-button');
+  searchInput = document.getElementById ('search-input');
+  console.log(searchbtn);
+  searchbtn.addEventListener('click',function(event)
+    {
+    event.preventDefault();
+    searchInput.classList.toggle('show');
+    //alert('button clicked!');
+  });
+
+  //their code
 
   container = document.getElementById('site-navigation');
   if (!container) {

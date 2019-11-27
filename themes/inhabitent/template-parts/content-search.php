@@ -2,7 +2,7 @@
 /**
  * Template part for displaying results in search pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -22,3 +22,15 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->
+?>
+<?php
+if(is_front_page( )):
+    if ( has_post_thumbnail() ) :
+    ?>
+         <div class='hero-banner' style='background: url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;'>
+            <!-- output the white circle logo for the front-page -->
+            <img class="hero-banner-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"/>
+        </div>
+    <?php
+    endif;
+endif;

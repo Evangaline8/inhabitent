@@ -6,7 +6,6 @@ html {
   box-sizing: border-box;
   @include font-size(1);
 }
-
 *,
 *:before,
 *:after {
@@ -41,7 +40,7 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {
@@ -71,3 +70,4 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 }
+

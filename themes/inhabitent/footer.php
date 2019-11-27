@@ -2,21 +2,32 @@
 /**
  * The template for displaying the footer.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
+/**
+ * The sidebar containing the main widget area.s
+ *
+ * @package Inhabitent_Theme
+ */
+
+if ( ! is_active_sidebar( 'footer-1' ) ) {
+	return;
+}
 ?>
 
 			</div><!-- #content -->
-
+			
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<?php dynamic_sidebar( 'footer-1' ); ?>
+
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
+		
 
 	</body>
 </html>
