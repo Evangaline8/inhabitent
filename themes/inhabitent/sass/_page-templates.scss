@@ -4,6 +4,22 @@
 html{
     margin-top: 0px !important;
 }
+h1{
+    margin: 2rem;
+    font-family: 'Novecento Sans Web';
+}
+h2{
+    margin: 2rem;
+    font-family: 'Novecento Sans Web';
+}
+p{
+    margin: 2rem;
+    
+}
+.page-title{
+    text-align: center;
+
+}
 .site-content{
     display:flex;
     width: 100%;
@@ -113,6 +129,7 @@ html{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;  
+
     }
 
 }
@@ -123,4 +140,24 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Archive-Product */
+.archive-container{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        .entry-header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: darkgrey;
+            border-style: solid;
+            border-width: 1px;
+            margin: 0.5em;
+        }
+}
+.taxonomy-description{
+    text-align: center;
 }

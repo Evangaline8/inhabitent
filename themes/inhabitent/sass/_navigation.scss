@@ -5,15 +5,15 @@
 /* Links */
 
 a {
-	color: white;
+	color:#248A83;
 
 	&:visited {
-		color: white;
+		color:#248A83;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: #248A83;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -28,6 +28,7 @@ a {
 
 .menu-main-menu-container{
 	margin-left:55%;
+	background: white
 }
 
 .main-navigation {
@@ -35,7 +36,7 @@ a {
 	display: flex;
 	flex-direction: row-reverse;
 	width: 100%;
-	position: fixed;
+	//position: fixed;
 	li{
 		margin:5px;
 	}
@@ -149,5 +150,13 @@ a {
 
 }
 .search-input.show{
+
 	display:inline-block;
+}
+/*product type links*/
+.product-type-links{
+	display: flex;
+    justify-content: space-evenly;
+    margin-left: 40%;
+    margin-right: 40%;
 }

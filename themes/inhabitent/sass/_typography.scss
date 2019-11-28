@@ -16,13 +16,14 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
+	font-family: 'Novecento Sans Web';
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-size: 16px;
 }
 
 dfn, cite, em, i {

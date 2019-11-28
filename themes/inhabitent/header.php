@@ -23,7 +23,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				 <div class="site-branding">
 					<div id="banner-logo" class="mini-logo">
-						<a href=http://localhost:8888/inhabitent><img class="header-logo" src ='<?php get_template_directory_uri();?>/inhabitent/wp-content/uploads/2019/11/Tent-white.png'/></a>
+						<a href=http://localhost:8888/inhabitent><img class="header-logo" src ="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"/></a>
 					</div>
 					<div id="link-nav" class= "text-nav">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
